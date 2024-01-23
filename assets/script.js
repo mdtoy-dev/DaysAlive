@@ -17,8 +17,15 @@ $(document).ready(function () {
     displayResult(diffDays);
   }
 
+  let result;
+
   function displayResult(days) {
-    const result = $("<p>").appendTo(resultDiv);
+    if(result) {
+        result.text(days); 
+      } else {
+        result = $("<h2>").appendTo(resultDiv);
+      }
+    resultDiv.attr("class", "wrap");
     result.attr("class", "display-4");
     result.text(days);
   }
