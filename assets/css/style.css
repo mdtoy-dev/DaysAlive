@@ -25,7 +25,7 @@ body {
     transform: translate(-50%,-50%);
     text-align: center;
     background-color: #f8ebea;
-    background-image: url(grainy.png);
+    background-image: url(../grainy.png);
     background-attachment: fixed;
     width: 350px;
     height: 350px;
